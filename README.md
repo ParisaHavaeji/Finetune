@@ -35,10 +35,3 @@ for example,
 if you want to GPU-0 to accelerate your training.
 If you leave `GPU ID` blank, the model will be trained on CPU.
 
-~~For MacOS running on M* chips, running `bash ./run.sh` will automatically take advantage of [mps accelaration](https://developer.apple.com/metal/pytorch/). You can disable this behavior by adding `--no_mps` argument into the Python call in the `sh` file.~~
-This feature is deprecated as mps sometimes returns incorrect results.
-
-
-## Reference
-
-With default hyper-parameters, each training epoch takes roughly 30s to run on Mac M1 CPU, ~~18s on mps,~~ and 2s on Nvidia A5000/RTX4090 GPU.
